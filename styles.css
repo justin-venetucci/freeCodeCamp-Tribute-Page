@@ -1,0 +1,105 @@
+/* Resetting default margin and padding for better consistency */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+}
+
+#main {
+    padding: 2rem 1rem;
+    border-radius: 3px;
+    background-color: rgb(50, 50, 50);
+}
+
+#title {
+    margin: 0; /* #main padding already gives enough space */
+    padding: 1rem;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#subtitle {
+    margin: 1em;
+}
+
+#img-div {
+    margin: 2rem auto;
+}
+
+#image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Centers the image */
+}
+
+#img-caption {
+    padding-top: 1rem;
+}
+
+#timeline-header {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#tribute-info ul {
+    list-style-type: circle;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+#tribute-info li {
+    padding: 0.66rem;
+    text-align: left;
+    margin-left: 0.75rem; /* Prevent bullets escaping tribute-info section on mobile */
+    font-size: 1.1rem;
+}
+
+#tribute-info blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+#tribute-link {
+     display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#tribute-link:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+footer {
+    margin-top: 1em;
+}
